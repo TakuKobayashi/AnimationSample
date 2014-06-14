@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="animation_kind_list">
+    <item>アニメーション1</item>
+    <item>アニメーション2</item>
+    <item>アニメーション3</item>
+    <item>アニメーション4</item>
+  </string-array>
+</resources>
