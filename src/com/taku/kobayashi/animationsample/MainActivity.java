@@ -16,6 +16,8 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
@@ -76,6 +78,18 @@ public class MainActivity extends Activity {
         
       }
     });
+
+    String[] textAnimetionList = this.getResources().getStringArray(R.array.text_animation_kind_list);
+    ArrayAdapter<String> textAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
+    textAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+    for(int i = 0;i < textAnimetionList.length;++i){
+      textAdapter.add(textAnimetionList[i]);
+    }
+    Spinner textSpinner = (Spinner) findViewById(R.id.TextAnimationKindSpinner);
+    textSpinner.setAdapter(textAdapter);
+
+    EditText tweetText = (EditText) findViewById(R.id.EditTextAnimation);
+    Button textAnimationButton = (Button) findViewById(R.id.TextAnimationStartButton);
   }
 
   @Override
