@@ -6,6 +6,10 @@
     <item>アニメーション3</item>
     <item>アニメーション4</item>
   </string-array>
+  <string-array name="sample_list">
+    <item>Tweenアニメーションサンプル</item>
+    <item>Textアニメーションサンプル</item>
+  </string-array>
   <string-array name="text_animation_kind_list">
     <item>ニコ動風</item>
     <item>RPG風</item>
