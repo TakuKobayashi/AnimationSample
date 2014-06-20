@@ -49,6 +49,9 @@ public class MainActivity extends Activity {
         case 1:
           intent.setClass(MainActivity.this, TextAnimationActivity.class);
           break;
+        case 2:
+          intent.setClass(MainActivity.this, VerticalSeekBarActivity.class);
+          break;
         default:
           break;
         }
